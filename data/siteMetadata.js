@@ -3,7 +3,7 @@ const siteMetadata = {
   title: `AlvisLu's Blog`,
   author: 'Alvis Lu',
   headerTitle: 'AlvisLu Blog',
-  description: '',
+  description: '這裡會記錄我的生活和學習筆記 🤓',
   language: 'zh-tw',
   theme: 'system', // system, dark or light
   siteUrl: 'https://alvis-blog.vercel.app/about',
