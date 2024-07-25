@@ -4,7 +4,7 @@ const siteMetadata = {
   author: 'Alvis Lu',
   headerTitle: 'AlvisLu Blog',
   description: '',
-  language: 'en-us',
+  language: 'zh-tw',
   theme: 'system', // system, dark or light
   siteUrl: 'https://alvis-blog.vercel.app/about',
   siteRepo: 'https://github.com/alvisLu/alvis-blog',
@@ -77,7 +77,7 @@ const siteMetadata = {
       // example: https://giscus.app/themes/custom_example.css
       themeURL: '',
       // This corresponds to the `data-lang="en"` in giscus's configurations
-      lang: 'en',
+      lang: 'zh',
     },
   },
   search: {
