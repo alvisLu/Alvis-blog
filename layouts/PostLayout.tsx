@@ -116,7 +116,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                      tags
+                      標籤
                     </h2>
                     <div className="flex flex-wrap">
                       {tags.map((tag) => (
