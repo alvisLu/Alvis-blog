@@ -6,8 +6,8 @@ const siteMetadata = {
   description: '這裡會記錄我的生活和學習筆記 🤓',
   language: 'zh-tw',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://alvis-blog.vercel.app/about',
-  siteRepo: 'https://github.com/alvisLu/alvis-blog',
+  siteUrl: 'https://alvislu.github.io',
+  siteRepo: 'https://github.com/alvisLu/alvislu.github.io',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   // mastodon: 'https://mastodon.social/@mastodonuser',
