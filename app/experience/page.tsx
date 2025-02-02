@@ -28,12 +28,11 @@ export default function Page() {
               <div className="flex grid-cols-3 items-center justify-between">
                 <p className="text-lg font-bold leading-7 ">{e.position}</p>
                 <div className="flex space-x-2">
-                  <a
-                    href={e.link}
-                    className="text-lg font-extrabold leading-9 tracking-tight text-blue-500 dark:text-blue-300 sm:text-xl sm:leading-10 md:text-2xl md:leading-14"
-                  >
-                    {e.company}
-                  </a>
+                  <Link href={e.link}>
+                    <span className="text-lg font-extrabold leading-9 tracking-tight text-blue-500 dark:text-blue-300 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
+                      {e.company}
+                    </span>
+                  </Link>
                   <p className="text-lg font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
                     {e.companyZh}
                   </p>
@@ -83,9 +82,9 @@ export default function Page() {
             {experience.education.details.map((d) => (
               <li key={d.content}>
                 {d.content} (
-                <a href={d.link} className="text-blue-500 dark:text-blue-300 ">
-                  {d.link}
-                </a>
+                <Link href={d.link}>
+                  <span className="text-blue-500 dark:text-blue-300 ">{d.link}</span>
+                </Link>
                 )
               </li>
             ))}
