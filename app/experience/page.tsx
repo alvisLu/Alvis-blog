@@ -25,8 +25,8 @@ export default function Page() {
         <div className="space-y-2 pt-6 md:space-y-5">
           {experience.employment.map((e) => (
             <div key={e.company}>
-              <div className="flex grid-cols-3 items-center justify-between">
-                <p className="text-lg font-bold leading-7 ">{e.position}</p>
+              <div className="flex flex-col items-center justify-between md:grid-cols-3 md:flex-row">
+                <p className="text-base font-bold leading-7 md:text-lg ">{e.position}</p>
                 <div className="flex space-x-2">
                   <Link href={e.link}>
                     <span className="text-lg font-extrabold leading-9 tracking-tight text-blue-500 dark:text-blue-300 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
@@ -37,7 +37,7 @@ export default function Page() {
                     {e.companyZh}
                   </p>
                 </div>
-                <p className="text-lg font-bold leading-7 text-gray-500 dark:text-gray-400">
+                <p className="text-sm font-bold leading-7 text-gray-500 dark:text-gray-400 md:text-lg">
                   {e.date}
                 </p>
               </div>
@@ -66,14 +66,16 @@ export default function Page() {
         </div>
 
         <div className="space-y-2 pt-6 md:space-y-5">
-          <div className="flex grid-cols-3 items-center justify-between">
-            <p className="text-lg font-bold leading-7 ">{experience.education.degree}</p>
+          <div className="flex flex-col items-center justify-between md:grid-cols-3 md:flex-row">
+            <p className="text-base font-bold leading-7 md:text-lg ">
+              {experience.education.degree}
+            </p>
             <div className="flex space-x-2">
               <p className="text-lg font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-10 md:text-2xl md:leading-14">
                 {experience.education.school}
               </p>
             </div>
-            <p className="text-lg font-bold leading-7 text-gray-500 dark:text-gray-400">
+            <p className="text-sm font-bold leading-7 text-gray-500 dark:text-gray-400 md:text-lg">
               {experience.education.date}
             </p>
           </div>
@@ -99,9 +101,9 @@ export default function Page() {
         </div>
 
         <div className="space-y-2 pt-6 md:space-y-5">
-          <div className="flex grid-cols-3  justify-between">
+          <div className="flex  flex-col justify-between md:grid-cols-3 md:flex-row">
             {experience.skills.map((s) => (
-              <div key={s.type}>
+              <div key={s.type} className="pb-2">
                 <p className="text-lg font-bold leading-7 ">{s.type}</p>
                 <ul className="list-disc pl-8">
                   {s.items.map((i) => (
