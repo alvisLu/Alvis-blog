@@ -4,7 +4,7 @@ const headerNavLinks = [
   { href: '/tags', title: '標籤' },
   // { href: '/projects', title: 'Projects' },
   { href: '/about', title: '關於我' },
-  { href: '/experience', title: '經歷' },
+  { href: '/resume', title: 'Resume' },
 ]
 
 export default headerNavLinks

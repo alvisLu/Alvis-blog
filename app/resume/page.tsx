@@ -2,7 +2,7 @@ import { experience } from '@/data/experience'
 import { genPageMetadata } from 'app/seo'
 import Link from 'next/link'
 
-export const metadata = genPageMetadata({ title: 'Experience' })
+export const metadata = genPageMetadata({ title: 'Resume' })
 
 export default function Page() {
   return (
@@ -44,9 +44,7 @@ export default function Page() {
 
               {e.tasks.map((t) => (
                 <div key={t.title}>
-                  <p className="text-lg font-bold leading-7 text-gray-500 dark:text-gray-400">
-                    {`${t.title}: `}
-                  </p>
+                  <p className="text-lg font-bold leading-7 ">{`${t.title}: `}</p>
                   <ul className="list-disc pl-8">
                     {t.descriptions.map((d) => (
                       <li key={d}>{d}</li>

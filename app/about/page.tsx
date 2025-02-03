@@ -16,7 +16,7 @@ export default function Page() {
     <>
       <AuthorLayout content={mainContent}>
         <MDXLayoutRenderer code={author.body.code} />
-        相了解更多關於我的經歷，請前往 <a href="/experience">Experience</a> 頁面或是下載{' '}
+        相了解更多關於我的經歷，請前往 <a href="/resume">Resume</a> 頁面或是下載{' '}
         <a href={pdfLink}>PDF</a>。
       </AuthorLayout>
     </>
