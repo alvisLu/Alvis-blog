@@ -26,47 +26,44 @@ interface Skill {
   items: string[]
 }
 
-interface Experience {
+interface Resume {
   employment: Employment[]
   education: Education
   skills: Skill[]
   pdfLink: string
 }
 
-export const experience: Experience = {
+export const resume: Resume = {
   employment: [
     {
       company: 'Simpos',
       companyZh: '簡結科技',
-      link: 'https://www.simpos.com/',
+      link: 'https://www.simpos.com.tw',
       position: 'Sr. Software Engineer',
       date: 'Oct 2021 - present',
       tasks: [
         {
           title: 'Web-based POS system',
           descriptions: [
-            'As the primary developer, designed and implemented the POS system.',
-            'System Under Test: Analyze and implement POS System test and improve test coverage.',
-            'Remote control of peripheral devices for POS systems.',
-            'Enhancing query efficiency and optimizing third-party integration.',
+            'Primary developer responsible for designing and implementing the POS system.',
+            'Designed and implemented remote control functionality for POS system peripheral devices.',
+            'Designed and implemented third-party system integrations.',
+            'Study and implemented AI assistant using RAG.',
           ],
         },
         {
-          title: 'Database Optimization',
+          title: 'System Optimization',
           descriptions: [
-            'Optimized a database with tens of millions of records, improving query efficiency by 70-80%.',
+            'System Under Test: Analyze and implement POS System test and improve test coverage.',
+            'Optimized a database with tens of millions of records, improving query efficiency by 70%+.',
           ],
-        },
-        {
-          title: 'AI Assistant',
-          descriptions: ['Design and implement AI Assistant using openAI, mongoDB(kNN).'],
         },
       ],
     },
     {
       company: 'Shopline Limited.',
       companyZh: '商線科技',
-      link: 'https://shopline.tw/',
+      link: 'https://shopline.tw',
       position: 'Sr. Software Engineer',
       date: 'May 2021 - Sep 2021',
       tasks: [
@@ -106,7 +103,7 @@ export const experience: Experience = {
         {
           title: 'Internal production line management system',
           descriptions: [
-            'Design and implement the front-end production line management system using Vue.js, Element-UI.',
+            'Design and implement the front-end production line management system using Vue.js.',
             'Assist partners in building back-end servers using Python (Flask-RESTful).',
           ],
         },
@@ -121,9 +118,7 @@ export const experience: Experience = {
       tasks: [
         {
           title: 'Jukebox back-end website',
-          descriptions: [
-            'Design and implement back-end website using React.js, Material-UI, GraphQL.',
-          ],
+          descriptions: ['Design and implement back-end website using React.js, GraphQL.'],
         },
         {
           title: 'New generation CNC',
