@@ -145,7 +145,7 @@ export const resume: Resume = {
     school: 'National Yunlin University of Sci. & Tech.',
     link: 'https://www.yuntech.edu.tw/',
     degree: 'Graduate Student',
-    date: 'Sep 2015 - Jun 2017',
+    date: 'Jul 2013 - Aug 2015',
     details: [
       {
         content: 'Thesis: Intelligent Autonomous Vehicle with LiDAR Guidance',
